@@ -57,7 +57,7 @@ Edit the `appsettings.json` file to configure the application:
 }
 ```
 
-- **ApiKey**: Your BBC News API key (leave as default)
+- **ApiKey**: BBC News API key (leave as default)
 - **BaseUrl**: Base URL for BBC News (leave as default)
 - **UrlPrefix**: Endpoint path for the comments API (leave as default)
 - **ForumId**: The forum ID of the HYS section you want to scrape (change)
