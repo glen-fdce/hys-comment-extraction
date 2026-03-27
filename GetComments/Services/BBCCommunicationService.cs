@@ -46,28 +46,4 @@ public class BBCCommunicationService
         return JsonSerializer.Deserialize<T>(responseString,
             new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
     }
-    
-    // public async Task GetParentComments()
-    // {
-    //     var httpClient = _httpClientFactory.CreateClient("HYS");
-    //     await using var dbContext = await _dbContextFactory.CreateDbContextAsync();
-    //     Console.WriteLine("Getting parent comments");
-    //     dbContext.Comments.Add(new EntityComment()
-    //     {
-    //         Id = Guid.NewGuid().ToString(),
-    //         CommentType = CommentType.Main,
-    //         CreatedDate = DateTime.UtcNow,
-    //         ParentCommentId = "123",
-    //         InReplyToId = "456",
-    //         RatingNegative = 0,
-    //         RatingPositive = 1,
-    //         Text = "Hello World!",
-    //         User = new EntityUser()
-    //         {
-    //             Id = Guid.NewGuid().ToString(),
-    //             DisplayName = "John Doe"
-    //         }
-    //     });
-    //     await dbContext.SaveChangesAsync();
-    // }
 }
